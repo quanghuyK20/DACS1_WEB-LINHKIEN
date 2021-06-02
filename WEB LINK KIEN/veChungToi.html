@@ -1,0 +1,154 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Về chúng tôi</title>
+    <link rel="icon" type="image/png" href="img/HD3.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/common-style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/veChungToi.css" />
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="css/nutgoi.css">
+    <link rel="stylesheet" href="css/livechat.css">
+
+</head>
+
+<body>
+    <div class="title-about">
+        <i class="fas fa-user-circle"></i> Thông Tin Về Chúng Tôi
+    </div>
+    <div class="wrapper">
+        <div class="team-box">
+            <div class="team-body">
+                <a href="https://www.facebook.com/profile.php?id=100010412418817">
+                    <div class="pic">
+                        <img src="img/huy.jpg">
+                    </div>
+                </a>
+                <div class="name">
+                    Quang Huy
+                </div>
+                <div class="info-member">
+
+                    <ul>
+                        <li>Làm Việc Tại Facebook</li>
+                        <li>18 tuổi</li>
+                        <li>Loves C++,Java,...</li>
+                        <li>Thích Các Loại Phim Cổ Trang</li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+            <div class="team-body">
+                <a href="https://www.facebook.com/pvd.bo02">
+                    <div class="pic">
+                        <img src="img/dat.jpg">
+                    </div>
+                </a>
+                <div class="name">
+                    Phạm Văn Đạt
+                </div>
+                <div class="info-member">
+                    <ul>
+                        <li>Làm việc tại nhà</li>
+                        <li>18 tuổi</li>
+                        <li>Yêu C++,Java, Making a game</li>
+                        <li>Phim yêu thích : Love</li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+        </div>
+        <div class="back-home"><a href="index.html">Home</a></div>
+    </div>
+
+    <div class="fb-livechat">
+        <div class="ctrlq fb-overlay"></div>
+        <div class="fb-widget">
+            <div class="ctrlq fb-close"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/QuangHuy.VKU" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"> </div>
+            <div class="fb-credit"> <a href="https://www.facebook.com/QuangHuy.VKU" target="_blank">Powered by Quang Huy</a> </div>
+            <div id="fb-root"></div>
+        </div>
+        <a href="https://m.me/QuangHuy.VKU" title="Gửi tin nhắn cho chúng tôi qua Facebook" class="ctrlq fb-button">
+            <div class="bubble">1</div>
+            <div class="bubble-msg">Bạn cần hỗ trợ?</div>
+        </a>
+    </div>
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            function detectmob() {
+                if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            var t = {
+                delay: 125,
+                overlay: $(".fb-overlay"),
+                widget: $(".fb-widget"),
+                button: $(".fb-button")
+            };
+            setTimeout(function() {
+                $("div.fb-livechat").fadeIn()
+            }, 8 * t.delay);
+            if (!detectmob()) {
+                $(".ctrlq").on("click", function(e) {
+                    e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({
+                        bottom: 0,
+                        opacity: 0
+                    }, 2 * t.delay, function() {
+                        $(this).hide("slow"), t.button.show()
+                    })) : t.button.fadeOut("medium", function() {
+                        t.widget.stop().show().animate({
+                            bottom: "30px",
+                            opacity: 1
+                        }, 2 * t.delay), t.overlay.fadeIn(t.delay)
+                    })
+                })
+            }
+        });
+    </script>
+
+
+
+    <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="tel:0922642414" class="pps-btn-img">
+                    <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+                </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0987654321">
+                <span class="text-hotline">0922.642.414</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+
+</html>

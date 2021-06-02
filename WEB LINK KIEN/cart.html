@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HD Group - Giỏ Hàng</title>
+    <link rel="shortcut icon" href="img/HD3.ico" />
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <link rel="stylesheet" href="css/nutgoi.css">
+    <link rel="stylesheet" href="css/livechat.css">
+    <link rel="stylesheet" href="css/search1.css">
+
+</head>
+
+<body>
+
+    <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="user-menu">
+                        <ul>
+                            <li><a href="veChungToi.html"><i class="fa fa-user"></i> Về chúng tôi</a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i> Yêu thích</a></li>
+
+                            <li><a href="user-login.html"><i class="fa fa-user"></i> Đăng nhập</a></li>
+                            <li><a href="index.html"><i class="fa fa-user"></i> HD Group </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">Đơn vị tiền :</span><span class="value">VND</span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">VND</a></li>
+                                    <li><a href="#">USD</a></li>
+                                    <li><a href="#">EURO</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">Ngôn ngữ:</span><span class="value">Tiếng Việt </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Tiếng Việt</a></li>
+                                    <li><a href="#">Tiếng Anh</a></li>
+                                    <li><a href="#">Tiếng Lào</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header area -->
+
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Chuyển điều hướng</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="ram.html">RAM</a></li>
+                        <li><a href="ssd.html">SSD</a></li>
+                        <li><a href="minipc.html">Mini PC</a></li>
+                        <li><a href="phukien.html">Phụ kiện</a></li>
+                        <li class="active"><a href="cart.html">Giỏ hàng</a></li>
+                        <li><a href="checkout.html">Thanh toán</a></li>
+                        <li><a href="chinhsachdoitra.html">Chính sách đổi trả</a></li>
+                        <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                        <li><a href="Lienhe.html">Liên hệ</a></li>
+                        <li>
+                            <div id="myOverlay" class="overlay">
+                                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                                <div class="overlay-content">
+                                    <form action="index.html">
+                                        <input type="text" placeholder="Bạn muốn tìm gì ở đây!" name="search">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <button class="openBtn" onclick="openSearch()"><img src="img/search_h.png" alt=""></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End mainmenu area -->
+
+    <br><br>
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-sidebar">
+                        <h2 class="sidebar-title">Tìm kiếm sản phẩm</h2>
+                        <form action="">
+                            <input type="text" placeholder="Nhập sản phẩm cần tìm kiếm...">
+                            <input type="submit" value="Tìm kiếm">
+                        </form>
+                    </div>
+
+                    <div class="single-sidebar">
+                        <h2 class="sidebar-title">Sản phẩm</h2>
+                        <div class="thubmnail-recent">
+                            <img src="img/ram-pc-kingston.jpg" class="recent-thumb" alt="">
+                            <h2><a href="">Ram PC Kingston HyperX 8GB 2666MHz DDR4</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>2.700.00</ins> <del>3.000.000</del>
+                            </div>
+                        </div>
+                        <div class="thubmnail-recent">
+                            <img src="img/SSD6.1.png" class="recent-thumb" alt="">
+                            <h2><a href="">SSD Lexar NS100 2.5-Inch</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>2.400.00</ins> <del>2.500.000</del>
+                            </div>
+                        </div>
+                        <div class="thubmnail-recent">
+                            <img src="img/wd-passportultra.jpg" class="recent-thumb" alt="">
+                            <h2><a href="">Ổ cứng di động Western Digital</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>2.700.00</ins> <del>3.000.000</del>
+                            </div>
+                        </div>
+                        <div class="thubmnail-recent">
+                            <img src="img/A14.png" class="recent-thumb" alt="">
+                            <h2><a href="">Thẻ Nhớ MicroSDXC SanDisk Ultra 32GB</a></h2>
+                            <div class="product-sidebar-price">
+                                <ins>2.400.00</ins> <del>2.500.000</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-sidebar">
+                        <h2 class="sidebar-title">Bài đăng gần đây</h2>
+                        <ul>
+                            <li><a href=""> HDD WD Elements Desktop 3.5inch 6TB</a></li>
+                            <li><a href="">USB 3.0 SanDisk Cruzer Glide CZ600 32GB</a></li>
+                            <li><a href="">SUSB 3.1 SanDisk Ultra Luxe CZ74 16GB</a></li>
+                            <li><a href="">Ram Laptop Crucial DDR4 4GB Bus 2666</a></li>
+                            <li><a href="">Ram Corsair Vengeance DDR4 4GB Bus 2400</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="product-content-right">
+                        <div class="woocommerce">
+                            <form method="post" action="#">
+                                <table cellspacing="0" class="shop_table cart">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-remove">&nbsp;</th>
+                                            <th class="product-thumbnail">&nbsp;</th>
+                                            <th class="product-name">Tên sản phẩm</th>
+                                            <th class="product-price">Giá</th>
+                                            <th class="product-quantity">Số lượng</th>
+                                            <th class="product-subtotal">Thành tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cart_item">
+                                            <td class="product-remove">
+                                                <a title="Remove this item" class="remove" href="#">×</a>
+                                            </td>
+
+                                            <td class="product-thumbnail">
+                                                <a href="single-product.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/ssd12.png"></a>
+                                            </td>
+
+                                            <td class="product-name">
+                                                <a href="single-product.html">SSD Samsung 128GB</a>
+                                            </td>
+
+                                            <td class="product-price">
+                                                <span class="amount">899.000</span>
+                                            </td>
+
+                                            <td class="product-quantity">
+                                                <div class="quantity buttons_added">
+                                                    <input type="button" class="minus" value="-">
+                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                                                    <input type="button" class="plus" value="+">
+                                                </div>
+                                            </td>
+
+                                            <td class="product-subtotal">
+                                                <span class="amount">895.000</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="actions" colspan="6">
+                                                <div class="coupon">
+                                                    <label for="coupon_code">Phiếu giảm giá:</label>
+                                                    <input type="text" placeholder="Mã giảm giá" value="" id="coupon_code" class="input-text" name="coupon_code">
+                                                    <input type="submit" value="Chọn" name="apply_coupon" class="button">
+                                                </div>
+                                                <input type="submit" value="Cập nhật" name="update_cart" class="button">
+                                                <input type="submit" value="Thanh toán" name="proceed" class="checkout-button button alt wc-forward">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+
+                            <div class="cart-collaterals">
+
+
+                                <div class="cross-sells">
+                                    <h2>Có thể bạn quan tâm...</h2>
+                                    <ul class="products">
+                                        <li class="product">
+                                            <a href="single-product.html">
+                                                <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="img/ssd10.jpg">
+                                                <h3>SSD Kington</h3>
+                                                <span class="price"><span class="amount">4.290.000</span></span>
+                                            </a>
+
+                                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="22" rel="nofollow" href="single-product.html">Chọn sản phẩm</a>
+                                        </li>
+
+                                        <li class="product">
+                                            <a href="single-product.html">
+                                                <img width="325" height="325" alt="T_4_front" class="attachment-shop_catalog wp-post-image" src="img/ssd11.png">
+                                                <h3>SSD Samsung</h3>
+                                                <span class="price"><span class="amount">590.000</span></span>
+                                            </a>
+
+                                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="22" rel="nofollow" href="single-product.html">Chọn sản phẩm</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="cart_totals ">
+                                    <h2>Tổng giỏ hàng</h2>
+
+                                    <table cellspacing="0">
+                                        <tbody>
+                                            <tr class="cart-subtotal">
+                                                <th>Giảm giá</th>
+                                                <td><span class="amount">105.000</span></td>
+                                            </tr>
+
+                                            <tr class="shipping">
+                                                <th>Xử lý và vận chuyển</th>
+                                                <td>Miễn phí vận chuyển</td>
+                                            </tr>
+
+                                            <tr class="order-total">
+                                                <th>Tổng đơn hàng đã đặt</th>
+                                                <td><strong><span class="amount">1.845.000</span></strong> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                                <form method="post" action="#" class="shipping_calculator">
+                                    <h2><a class="shipping-calculator-button" data-toggle="collapse" href="#calcalute-shipping-wrap" aria-expanded="false" aria-controls="calcalute-shipping-wrap">Tính phí vận chuyển</a></h2>
+
+                                    <section id="calcalute-shipping-wrap" class="shipping-calculator-form collapse">
+
+                                        <p class="form-row form-row-wide">
+                                            <select rel="calc_shipping_state" class="country_to_state" id="calc_shipping_country" name="calc_shipping_country">
+                                    <option value="">Chọn Quốc Gia</option>
+                                    <option value="AX">Åland Islands</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AI">Anguilla</option>
+                                    <option value="AQ">Antarctica</option>
+                                    <option value="AG">Antigua and Barbuda</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="AM">Armenia</option>
+                                    <option value="AW">Aruba</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="AT">Austria</option>
+                                    <option value="AZ">Azerbaijan</option>
+                                    <option value="BS">Bahamas</option>
+                                    <option value="BH">Bahrain</option>
+                                    <option value="BD">Bangladesh</option>
+                                    <option value="BB">Barbados</option>
+                                    <option value="BY">Belarus</option>
+                                    <option value="PW">Belau</option>
+                                    <option value="BE">Belgium</option>
+                                    <option value="BZ">Belize</option>
+                                    <option value="BJ">Benin</option>
+                                    <option value="BM">Bermuda</option>
+                                    <option value="BT">Bhutan</option>
+                                    <option value="BO">Bolivia</option>
+                                    <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+                                    <option value="BA">Bosnia and Herzegovina</option>
+                                    <option value="BW">Botswana</option>
+                                    <option value="BV">Bouvet Island</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="IO">British Indian Ocean Territory</option>
+                                    <option value="VG">British Virgin Islands</option>
+                                    <option value="BN">Brunei</option>
+                                    <option value="BG">Bulgaria</option>
+                                    <option value="BF">Burkina Faso</option>
+                                    <option value="BI">Burundi</option>
+                                    <option value="KH">Cambodia</option>
+                                    <option value="CM">Cameroon</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CV">Cape Verde</option>
+                                    <option value="KY">Cayman Islands</option>
+                                    <option value="CF">Central African Republic</option>
+                                    <option value="TD">Chad</option>
+                                    <option value="CL">Chile</option>
+                                    <option value="CN">China</option>
+                                    <option value="CX">Christmas Island</option>
+                                    <option value="CC">Cocos (Keeling) Islands</option>
+                                    <option value="CO">Colombia</option>
+                                    <option value="KM">Comoros</option>
+                                    <option value="CG">Congo (Brazzaville)</option>
+                                    <option value="CD">Congo (Kinshasa)</option>
+                                    <option value="CK">Cook Islands</option>
+                                    <option value="CR">Costa Rica</option>
+                                    <option value="HR">Croatia</option>
+                                    <option value="CU">Cuba</option>
+                                    <option value="CW">CuraÇao</option>
+                                    <option value="CY">Cyprus</option>
+                                    <option value="CZ">Czech Republic</option>
+                                    <option value="DK">Denmark</option>
+                                    <option value="DJ">Djibouti</option>
+                                    <option value="DM">Dominica</option>
+                                    <option value="DO">Dominican Republic</option>
+                                    <option value="EC">Ecuador</option>
+                                    <option value="EG">Egypt</option>
+                                    <option value="SV">El Salvador</option>
+                                    <option value="GQ">Equatorial Guinea</option>
+                                    <option value="ER">Eritrea</option>
+                                    <option value="EE">Estonia</option>
+                                    <option value="ET">Ethiopia</option>
+                                    <option value="FK">Falkland Islands</option>
+                                    <option value="FO">Faroe Islands</option>
+                                    <option value="FJ">Fiji</option>
+                                    <option value="FI">Finland</option>
+                                    <option value="FR">France</option>
+                                    <option value="GF">French Guiana</option>
+                                    <option value="PF">French Polynesia</option>
+                                    <option value="TF">French Southern Territories</option>
+                                    <option value="GA">Gabon</option>
+                                    <option value="GM">Gambia</option>
+                                    <option value="GE">Georgia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="GH">Ghana</option>
+                                    <option value="GI">Gibraltar</option>
+                                    <option value="GR">Greece</option>
+                                    <option value="GL">Greenland</option>
+                                    <option value="GD">Grenada</option>
+                                    <option value="GP">Guadeloupe</option>
+                                    <option value="GT">Guatemala</option>
+                                    <option value="GG">Guernsey</option>
+                                    <option value="GN">Guinea</option>
+                                    <option value="GW">Guinea-Bissau</option>
+                                    <option value="GY">Guyana</option>
+                                    <option value="HT">Haiti</option>
+                                    <option value="HM">Heard Island and McDonald Islands</option>
+                                    <option value="HN">Honduras</option>
+                                    <option value="HK">Hong Kong</option>
+                                    <option value="HU">Hungary</option>
+                                    <option value="IS">Iceland</option>
+                                    <option value="IN">India</option>
+                                    <option value="ID">Indonesia</option>
+                                    <option value="IR">Iran</option>
+                                    <option value="IQ">Iraq</option>
+                                    <option value="IM">Isle of Man</option>
+                                    <option value="IL">Israel</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="CI">Ivory Coast</option>
+                                    <option value="JM">Jamaica</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="JE">Jersey</option>
+                                    <option value="JO">Jordan</option>
+                                    <option value="KZ">Kazakhstan</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="KI">Kiribati</option>
+                                    <option value="KW">Kuwait</option>
+                                    <option value="KG">Kyrgyzstan</option>
+                                    <option value="LA">Laos</option>
+                                    <option value="LV">Latvia</option>
+                                    <option value="LB">Lebanon</option>
+                                    <option value="LS">Lesotho</option>
+                                    <option value="LR">Liberia</option>
+                                    <option value="LY">Libya</option>
+                                    <option value="LI">Liechtenstein</option>
+                                    <option value="LT">Lithuania</option>
+                                    <option value="LU">Luxembourg</option>
+                                    <option value="MO">Macao S.A.R., China</option>
+                                    <option value="MK">Macedonia</option>
+                                    <option value="MG">Madagascar</option>
+                                    <option value="MW">Malawi</option>
+                                    <option value="MY">Malaysia</option>
+                                    <option value="MV">Maldives</option>
+                                    <option value="ML">Mali</option>
+                                    <option value="MT">Malta</option>
+                                    <option value="MH">Marshall Islands</option>
+                                    <option value="MQ">Martinique</option>
+                                    <option value="MR">Mauritania</option>
+                                    <option value="MU">Mauritius</option>
+                                    <option value="YT">Mayotte</option>
+                                    <option value="MX">Mexico</option>
+                                    <option value="FM">Micronesia</option>
+                                    <option value="MD">Moldova</option>
+                                    <option value="MC">Monaco</option>
+                                    <option value="MN">Mongolia</option>
+                                    <option value="ME">Montenegro</option>
+                                    <option value="MS">Montserrat</option>
+                                    <option value="MA">Morocco</option>
+                                    <option value="MZ">Mozambique</option>
+                                    <option value="MM">Myanmar</option>
+                                    <option value="NA">Namibia</option>
+                                    <option value="NR">Nauru</option>
+                                    <option value="NP">Nepal</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="AN">Netherlands Antilles</option>
+                                    <option value="NC">New Caledonia</option>
+                                    <option value="NZ">New Zealand</option>
+                                    <option value="NI">Nicaragua</option>
+                                    <option value="NE">Niger</option>
+                                    <option value="NG">Nigeria</option>
+                                    <option value="NU">Niue</option>
+                                    <option value="NF">Norfolk Island</option>
+                                    <option value="KP">North Korea</option>
+                                    <option value="NO">Norway</option>
+                                    <option value="OM">Oman</option>
+                                    <option value="PK">Pakistan</option>
+                                    <option value="PS">Palestinian Territory</option>
+                                    <option value="PA">Panama</option>
+                                    <option value="PG">Papua New Guinea</option>
+                                    <option value="PY">Paraguay</option>
+                                    <option value="PE">Peru</option>
+                                    <option value="PH">Philippines</option>
+                                    <option value="PN">Pitcairn</option>
+                                    <option value="PL">Poland</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="QA">Qatar</option>
+                                    <option value="IE">Republic of Ireland</option>
+                                    <option value="RE">Reunion</option>
+                                    <option value="RO">Romania</option>
+                                    <option value="RU">Russia</option>
+                                    <option value="RW">Rwanda</option>
+                                    <option value="ST">São Tomé and Príncipe</option>
+                                    <option value="BL">Saint Barthélemy</option>
+                                    <option value="SH">Saint Helena</option>
+                                    <option value="KN">Saint Kitts and Nevis</option>
+                                    <option value="LC">Saint Lucia</option>
+                                    <option value="SX">Saint Martin (Dutch part)</option>
+                                    <option value="MF">Saint Martin (French part)</option>
+                                    <option value="PM">Saint Pierre and Miquelon</option>
+                                    <option value="VC">Saint Vincent and the Grenadines</option>
+                                    <option value="SM">San Marino</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="SN">Senegal</option>
+                                    <option value="RS">Serbia</option>
+                                    <option value="SC">Seychelles</option>
+                                    <option value="SL">Sierra Leone</option>
+                                    <option value="SG">Singapore</option>
+                                    <option value="SK">Slovakia</option>
+                                    <option value="SI">Slovenia</option>
+                                    <option value="SB">Solomon Islands</option>
+                                    <option value="SO">Somalia</option>
+                                    <option value="ZA">South Africa</option>
+                                    <option value="GS">South Georgia/Sandwich Islands</option>
+                                    <option value="KR">South Korea</option>
+                                    <option value="SS">South Sudan</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="LK">Sri Lanka</option>
+                                    <option value="SD">Sudan</option>
+                                    <option value="SR">Suriname</option>
+                                    <option value="SJ">Svalbard and Jan Mayen</option>
+                                    <option value="SZ">Swaziland</option>
+                                    <option value="SE">Sweden</option>
+                                    <option value="CH">Switzerland</option>
+                                    <option value="SY">Syria</option>
+                                    <option value="TW">Taiwan</option>
+                                    <option value="TJ">Tajikistan</option>
+                                    <option value="TZ">Tanzania</option>
+                                    <option value="TH">Thailand</option>
+                                    <option value="TL">Timor-Leste</option>
+                                    <option value="TG">Togo</option>
+                                    <option value="TK">Tokelau</option>
+                                    <option value="TO">Tonga</option>
+                                    <option value="TT">Trinidad and Tobago</option>
+                                    <option value="TN">Tunisia</option>
+                                    <option value="TR">Turkey</option>
+                                    <option value="TM">Turkmenistan</option>
+                                    <option value="TC">Turks and Caicos Islands</option>
+                                    <option value="TV">Tuvalu</option>
+                                    <option value="UG">Uganda</option>
+                                    <option value="UA">Ukraine</option>
+                                    <option value="AE">United Arab Emirates</option>
+                                    <option value="UK">United Kingdom (UK)</option>
+                                    <option value="US">United States (US)</option>
+                                    <option value="UY">Uruguay</option>
+                                    <option value="UZ">Uzbekistan</option>
+                                    <option value="VU">Vanuatu</option>
+                                    <option value="VA">Vatican</option>
+                                    <option value="VE">Venezuela</option>
+                                    <option selected="selected" value="GB">Vietnam</option>
+                                    <option value="WF">Wallis and Futuna</option>
+                                    <option value="EH">Western Sahara</option>
+                                    <option value="WS">Western Samoa</option>
+                                    <option value="YE">Yemen</option>
+                                    <option value="ZM">Zambia</option>
+                                    <option value="ZW">Zimbabwe</option>
+                                </select>
+                                        </p>
+
+                                        <p class="form-row form-row-wide"><input type="text" id="calc_shipping_state" name="calc_shipping_state" placeholder="Tỉnh /Thành phố" value="" class="input-text"> </p>
+
+                                        <p class="form-row form-row-wide"><input type="text" id="calc_shipping_postcode" name="calc_shipping_postcode" placeholder="Postcode / Zip" value="" class="input-text"></p>
+
+
+                                        <p><button class="button" value="1" name="calc_shipping" type="submit">Cập nhật</button></p>
+
+                                    </section>
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-top-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about-us">
+                        <h2>HD<span>Group</span></h2>
+                        <p>Uy Tín - Chất lượng - Bảo hành tận nơi</p>
+                        <div class="footer-social">
+                            <a href="#" target="_blank" style="background-color: blue;"><i class="fa fa-facebook" ></i></a>
+                            <a href="#" target="_blank" style="background-color: rgb(46, 206, 255);"><i class="fa fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="#" target="_blank" style="background-color: rgb(43, 43, 219);"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="copyright" style="font-size: 13px;">
+                        <p> Bản quyền ©2020-2021 HD Group bảo lưu mọi quyền </p>
+                        <p> Công ty Cổ phần HD Group </p>
+                        <p> Giấy CNĐT: VKU-20IT268, do UBND TP Đà Nẵng cấp ngày 31/5/2021 </p>
+                        <p> Địa chỉ: Số 470, đường Trần Đại Nghĩa, phường Hòa Quý, Quận Ngũ Hanh Sơn, TP. Đà Nẵng </p>
+                        <p> Điện thoại: +84-290000000 </p>
+
+                    </div>
+                    <div class="footer-card-icon">
+                        <img class="image__main responsive-img image--loaded" data-desktop-src="//images.samsung.com/is/image/samsung/assets/vn/p6_gro1/p6_initial_footer/gov-logos-1.png?$ORIGIN_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/vn/p6_gro1/p6_initial_footer/gov-logos-1.png?$ORIGIN_PNG$"
+                            alt="Đã đăng ký với Bộ Công Thương" data-comp-name="common.image" src="//images.samsung.com/is/image/samsung/assets/vn/p6_gro1/p6_initial_footer/gov-logos-1.png?$ORIGIN_PNG$">
+                        <img class="image__main responsive-img image--loaded" data-desktop-src="//images.samsung.com/is/image/samsung/assets/vn/p6_gro1/p6_initial_footer/gov-logos-2.png?$ORIGIN_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/vn/p6_gro1/p6_initial_footer/gov-logos-2.png?$ORIGIN_PNG$"
+                            alt="Đã đăng ký với Bộ Công Thương" data-comp-name="common.image" src="//images.samsung.com/is/image/samsung/assets/vn/p6_gro1/p6_initial_footer/gov-logos-2.png?$ORIGIN_PNG$">
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Công Ty</h2>
+                        <ul>
+                            <li><a href="veChungToi.html">Về chúng tôi</a></li>
+                            <li><a href="chinhsachdoitra.html">Chính sách đổi trả</a></li>
+                            <li><a href="GioiThieu.html">Giới thiệu</a></li>
+                            <li><a href="Lienhe.html">Liên hệ</a></li>
+                            <li><a href="#">Tin tức và sự kiện</a></li>
+                            <li><a href="#">Trách nhiệm xã hội</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Sản phẩm Dịch vụ</h2>
+                        <ul>
+                            <li><a href="ssd.html">SSD</a></li>
+                            <li><a href="ram.html">Ram</a></li>
+                            <li><a href="shop.html">Giải pháp NAS</a></li>
+                            <li><a href="shop.html">Thẻ Nhớ</a></li>
+                            <li><a href="phukien.html">Linh kiện games</a></li>
+                            <li><a href="shop.html">Ổ cứng di động</a></li>
+                            <li><a href="minipc.html">Mini PC</a></li>
+                            <li><a href="phukien.html">Phụ kiện </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="footer-wid-title">Thông tin mới</h2>
+                        <p>Đăng kí nhận thông tin sản phẩm và ưu đãi độc quyền!</p>
+                        <div class="newsletter-form">
+                            <form action="#">
+                                <input type="email" placeholder="Nhập Email của bạn">
+                                <input type="submit" value="Gửi">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End footer top area -->
+
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="copyright">
+                        <p>&copy; 2021 HD Group. All Rights Reserved. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="footer-card-icon">
+                        <i class="fa fa-cc-discover"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <i class="fa fa-cc-paypal"></i>
+                        <i class="fa fa-cc-visa"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fb-livechat">
+        <div class="ctrlq fb-overlay"></div>
+        <div class="fb-widget">
+            <div class="ctrlq fb-close"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/QuangHuy.VKU" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"> </div>
+            <div class="fb-credit"> <a href="https://www.facebook.com/QuangHuy.VKU" target="_blank">Powered by Quang Huy</a> </div>
+            <div id="fb-root"></div>
+        </div>
+        <a href="https://m.me/QuangHuy.VKU" title="Gửi tin nhắn cho chúng tôi qua Facebook" class="ctrlq fb-button">
+            <div class="bubble">1</div>
+            <div class="bubble-msg">Bạn cần hỗ trợ?</div>
+        </a>
+    </div>
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            function detectmob() {
+                if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            var t = {
+                delay: 125,
+                overlay: $(".fb-overlay"),
+                widget: $(".fb-widget"),
+                button: $(".fb-button")
+            };
+            setTimeout(function() {
+                $("div.fb-livechat").fadeIn()
+            }, 8 * t.delay);
+            if (!detectmob()) {
+                $(".ctrlq").on("click", function(e) {
+                    e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({
+                        bottom: 0,
+                        opacity: 0
+                    }, 2 * t.delay, function() {
+                        $(this).hide("slow"), t.button.show()
+                    })) : t.button.fadeOut("medium", function() {
+                        t.widget.stop().show().animate({
+                            bottom: "30px",
+                            opacity: 1
+                        }, 2 * t.delay), t.overlay.fadeIn(t.delay)
+                    })
+                })
+            }
+        });
+    </script>
+
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+    <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="tel:0922642414" class="pps-btn-img">
+                    <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+                </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0987654321">
+                <span class="text-hotline">0922.642.414</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Latest jQuery form server -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <!-- Bootstrap JS form CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- jQuery sticky menu -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+ body {
+     background-color: #e9e9e996;
+ }
+ 
+ #message-box {
+     display: none;
+     color: red;
+     text-align: left;
+     font-size: 15px;
+     border: 1px solid red;
+ }
+ 
+ .wrapper {
+     margin-top: 150px;
+     margin-bottom: 80px;
+     text-align: center;
+ }
+ 
+ .form-signin {
+     max-width: 90vw;
+     border-radius: 25px;
+     padding: 25px 35px 45px;
+     margin: 0 auto;
+     background-color: #fff;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+ }
+ 
+ .logo {
+     margin-bottom: 30px;
+     object-fit: contain;
+     max-width: 45vw;
+ }
+ 
+ .password {
+     text-align: left;
+ }
+ 
+ .checkbox {
+     font-weight: normal;
+     padding-left: 2px;
+ }
+ 
+ .sign-in {
+     margin-bottom: 30px;
+     margin-top: 60px;
+ }
+ 
+ .form-control {
+     position: relative;
+     font-size: 16px;
+     height: auto;
+     padding: 5px;
+ }
+ 
+ input[type="text"] {
+     display: block;
+     width: 100%;
+     color: #909090;
+     border: none;
+     border-bottom: 1px solid #8c8c8c;
+     background-color: transparent;
+     box-sizing: border-box;
+     border-radius: 0;
+     display: block;
+     position: relative;
+     z-index: 1;
+ }
+ 
+ input[type="password"] {
+     /* margin-bottom: 20px;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0; */
+     display: block;
+     width: 100%;
+     color: #909090;
+     border: none;
+     border-bottom: 1px solid #8c8c8c;
+     background-color: transparent;
+     box-sizing: border-box;
+     border-radius: 0;
+     display: block;
+     position: relative;
+     z-index: 1;
+     margin: 37px 0 24px 0;
+ }
+ 
+ .new-account {
+     display: block;
+     margin-top: 10px;
+     text-align: right;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+     .form-signin {
+         width: 25vw;
+     }
+     .logo {
+         margin-bottom: 30px;
+         width: 15vw;
+     }
+ }
